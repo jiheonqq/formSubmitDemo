@@ -30,13 +30,13 @@
                         <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#cv" class="nav-link">CV</a>
+                        <a href="cv.html" class="nav-link">CV</a>
                     </li>
                     <li class="nav-item">
                         <a href="pastworks.html" class="nav-link">Past Works</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#interests" class="nav-link">Interests</a>
+                        <a href="interests.html" class="nav-link">Interests</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -47,7 +47,7 @@
     </nav>
 
     <!--Info-->
-    <section class="bg-danger text-light p-5 p-lg-2 pt-lg-5 text-sm-start">
+    <section class="background-text text-light p-5 p-lg-2 pt-lg-5 text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between my-lg-3">
 
@@ -91,39 +91,70 @@
         </video>
     </div>
 
-    <!-- Footer -->
-<footer">
-    <div class="container mt-5" id="contact">
-        <h1>Contact Me!</h1>
-        <form class="row g-3" action="https://formsubmit.co/ffcad8a7289d9ee62ad0ef4f68c01d52" method="POST">
-        <!-- Honeypot -->
-        <input type="text"name="_honey" style="display: none;">
-
-        <!-- Disable Captcha -->
-        <input type="hidden" name="_captcha" value="false">
-        
-            <div class="col-md-3">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" name="name" id="firstName" required>
+       <!-- Footer -->
+       <footer class="mb-2">
+        <div class="container mt-1">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="contact" class="mt-5">
+                    <h1>Contact Me!</h1>
+                        <form class="row g-4" action="https://formsubmit.co/ffcad8a7289d9ee62ad0ef4f68c01d52" method="POST">
+                            <!-- Honeypot -->
+                            <input type="text" name="_honey" style="display: none;">
+                        
+                            <!-- Disable Captcha -->
+                            <input type="hidden" name="_captcha" value="false">
+                        
+                                <div class="row mt-5">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="firstName" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" name="name" id="firstName" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="lastName" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" name="Last Name" id="lastName" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="emailInfo" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" name="email" id="emailInfo" required>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-6">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" name="messages" id="message" rows="3" required></textarea>
+                                </div>
+                        
+                                <div class="row">
+                                    <div class="col-md-8 d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-custom">Submit</button>
+                                    </div>
+                                </div>
+                    </form>
+                </div>
             </div>
             <div class="col-md-4">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
+                <div class="container mt-5">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="col-md-12">
+                            <h2 class="mb-4">Contact Information</h2>
+                            <p>
+                                Email: karol.czaplejewicz11@gmail.com<br>
+                                <span>Phone: +32 488 67 09 80</span><br>
+                                <span>Address: Via Goito 25, Prato 59100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="col-md-4">
-                <label for="emailInfo" class="form-label">E-mail</label>
-                <input type="email" class="form-control" name="email" id="emailInfo" required>
-            </div>
-
-            <div class="col-md-5">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" name="messages" id="message" rows="2" required></textarea>
-            </div>
-            <div class="col-md-12">
-                <button type="submit" class="btn btn-custom">Submit</button>
-            </div>
-        </form>
+        </div>
     </div>
 </footer>
 
